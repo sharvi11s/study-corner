@@ -1,4 +1,5 @@
 import './App.css'
+import DotField from './components/DotField'
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       </nav>
 
       <section className="hero">
+        <DotField />
+
         <h1 className="hero-title">Tired of making study timetables?</h1>
         <p className="meet">meet</p>
         <h2 className="studycorner-title">StudyCorner</h2>
