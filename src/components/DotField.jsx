@@ -96,10 +96,10 @@ const DotField = memo(({
 
 
     function onMouseMove(e) {
-      const rect = canvas.getBoundingClientRect();
-      mouseRef.current.x = e.clientX - rect.left;
-      mouseRef.current.y = e.clientY - rect.top;
-    }
+  const rect = canvas.getBoundingClientRect();
+  mouseRef.current.x = e.clientX - rect.left;
+  mouseRef.current.y = e.clientY - rect.top;
+  }
 
 
     function updateMouseSpeed() {
