@@ -156,3 +156,13 @@ nav a:hover {
 .login-button:hover {
     transform: translateY(-3px);
 }
+
+/* hide the scrollbar but keep scrolling working */
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
