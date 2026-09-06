@@ -305,5 +305,3 @@ DotField.displayName = 'DotField';
 
 
 export default DotField;
-
-

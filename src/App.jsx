@@ -1,6 +1,7 @@
 import './App.css'
 import DotField from './components/DotField'
 import ScrollFadeSections from './components/ScrollFadeSections'
+import MeetSection from './components/MeetSection'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/login";
 
@@ -10,13 +11,7 @@ function App() {
       <h1 className="hero-title">Tired of making study timetables?</h1>
     ),
 
-    () => (
-      <>
-        <p className="meet">meet</p>
-        <h2 className="studycorner-title">StudyCorner</h2>
-        <p className="tagline">Your cozy corner for calmer semesters.</p>
-      </>
-    ),
+    (isActive) => <MeetSection isActive={isActive} />,
 
     () => (
       <>
