@@ -2,6 +2,7 @@ import './App.css'
 import DotField from './components/DotField'
 import ScrollFadeSections from './components/ScrollFadeSections'
 import MeetSection from './components/MeetSection'
+import DescriptionSection from './components/DescriptionSection'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/login";
 
@@ -12,6 +13,8 @@ function App() {
     ),
 
     (isActive) => <MeetSection isActive={isActive} />,
+
+    (isActive) => <DescriptionSection isActive={isActive} />,
 
     () => (
       <>
